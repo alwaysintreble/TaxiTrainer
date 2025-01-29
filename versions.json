@@ -1,0 +1,12 @@
+{
+  "versions": [
+    {
+      "mod_version": "0.1.0",
+      "download_url": "https://github.com/alwaysintreble/TaxiTrainer/releases/download/v0.1.0/TaxiTrainer-0.1.0.zip",
+      "sha256": "e96c016d131945d042bd5f99446a3b4208ecd58557a613f6db314d6c4f5ede3c",
+      "changelog": [
+        "Initial Release"
+      ]
+    }
+  ]
+}
