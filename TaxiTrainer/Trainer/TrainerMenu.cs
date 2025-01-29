@@ -9,6 +9,8 @@ public class TrainerMenu : CustomMenu
 
     public TrainerMenu() : base("Trainer")
     {
+        var teleportMenu = new TeleportMenu();
+        AddButton(new MenuButton("Teleport", teleportMenu.LoadMenu));
         _allLevelsUnlocked = true;
         foreach (var data in Data.levelDataList)
         {
