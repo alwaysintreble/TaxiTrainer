@@ -28,7 +28,7 @@ public class LevelManager
 
     private void LevelStart(On.ModMaster.orig_OnLevelStart orig, ModMaster self)
     {
-        Plugin.ChauffeurLogger.LogDebug("hi :)");
+        Main.ChauffeurLogger.LogDebug("hi :)");
         // PlayerManager.Instance.GetPlayerAttrs();
         orig(self);
     }
@@ -63,14 +63,14 @@ public class LevelManager
                 LoadLevel(IndexFromID((int)currentLevel));
                 break;
             case DeathHandling.ResetLevelAndCollectibles:
-                Plugin.ChauffeurLogger.LogDebug("Reset Level and collectibles");
+                Main.ChauffeurLogger.LogDebug("Reset Level and collectibles");
                 try
                 {
                     ResetCollectibles();
                 }
                 catch (Exception e)
                 {
-                    Plugin.ChauffeurLogger.LogError(e);
+                    Main.ChauffeurLogger.LogError(e);
                 }
                 LoadLevel(IndexFromID((int)currentLevel));
                 break;
@@ -89,11 +89,11 @@ public class LevelManager
     /// </summary>
     private void ResetCollectibles()
     {
-        Plugin.ChauffeurLogger.LogDebug(GameplayMaster.instance.levelId);
+        Main.ChauffeurLogger.LogDebug(GameplayMaster.instance.levelId);
         foreach (var levelData in Data.levelDataList)
         {
             var dataID = (Data.LevelId)levelData.levelId;
-            Plugin.ChauffeurLogger.LogDebug(dataID);
+            Main.ChauffeurLogger.LogDebug(dataID);
             if (GameplayMaster.instance.levelId != dataID) continue;
             var levelGears = Data.GearsLevelCollectedNumber(levelData.levelId);
             if (!new []{11, 17, 18, 19}.Contains(levelData.levelId))

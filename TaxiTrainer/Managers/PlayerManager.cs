@@ -29,7 +29,7 @@ public class PlayerManager
 
     private void OnPlayerStart(On.PlayerScript.orig_Start orig, PlayerScript self)
     {
-        Plugin.ChauffeurLogger.LogDebug("player started");
+        Main.ChauffeurLogger.LogDebug("player started");
         orig(self);
     }
 

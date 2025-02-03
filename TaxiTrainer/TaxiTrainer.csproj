@@ -45,7 +45,7 @@
     <ItemGroup>
         <PackageReference Include="BepInEx.Analyzers" Version="1.0.8" PrivateAssets="all"/>
         <PackageReference Include="BepInEx.Core" Version="5.4.21" />
-        <PackageReference Include="com.alwaysintreble.Chauffeur" Version="0.1.0" />
+        <PackageReference Include="com.alwaysintreble.Chauffeur" Version="0.2.0" />
         <PackageReference Include="UnityEngine.Modules" Version="2020.3.48" IncludeAssets="compile"/>
     </ItemGroup>
 
@@ -57,20 +57,8 @@
         <Reference Include="Assembly-CSharp">
             <HintPath>C:\Program Files (x86)\Steam\steamapps\common\Yellow Taxi Goes Vroom\Yellow Taxi Goes Vroom_Data\Managed\Assembly-CSharp.dll</HintPath>
         </Reference>
-        <Reference Include="Febucci.TextAnimator.Runtime">
-            <HintPath>..\..\..\Program Files (x86)\Steam\steamapps\common\Yellow Taxi Goes Vroom\Yellow Taxi Goes Vroom_Data\Managed\Febucci.TextAnimator.Runtime.dll</HintPath>
-        </Reference>
         <Reference Include="MMHOOK_Assembly-CSharp">
             <HintPath>C:\Program Files (x86)\Steam\steamapps\common\Yellow Taxi Goes Vroom\BepInEx\plugins\MMHOOK\MMHOOK_Assembly-CSharp.dll</HintPath>
-        </Reference>
-        <Reference Include="Unity.TextMeshPro">
-            <HintPath>..\..\..\Program Files (x86)\Steam\steamapps\common\Yellow Taxi Goes Vroom\Yellow Taxi Goes Vroom_Data\Managed\Unity.TextMeshPro.dll</HintPath>
-        </Reference>
-        <Reference Include="UnityEngine">
-            <HintPath>..\..\..\Program Files (x86)\Steam\steamapps\common\Yellow Taxi Goes Vroom\Yellow Taxi Goes Vroom_Data\Managed\UnityEngine.dll</HintPath>
-        </Reference>
-        <Reference Include="UnityEngine.CoreModule">
-            <HintPath>..\..\..\Program Files (x86)\Steam\steamapps\common\Yellow Taxi Goes Vroom\Yellow Taxi Goes Vroom_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
         </Reference>
     </ItemGroup>
 
